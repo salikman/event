@@ -1,0 +1,25 @@
+:root {
+	// Семейство шрифта по умолчанию
+	--bs-font-family: Racama, sans-serif;
+
+	// Размер шрифта по умолчанию
+	--bs-font-size: 18px;
+
+	// Жирность шрифта по умолчанию
+	--bs-font-weight: 400;
+
+	// Базовая высота шрифта
+	--bs-line-height: 1;
+
+	// Цвет шрифта по умолчанию
+	--bs-font-color: #0C0C0C;
+	--bs-transition: 0.3s ease-in-out;
+	--bs-radius: 10px;
+	--primary-color: #E93247;
+	--primary-hover-color: #2d2d2d;
+	--secondary-color: #1E1E1E;
+	--white-color: #fff;
+	--black-color: #1E1E1E;
+	--bs-shadow: 0px 2px 3px #{rgba(#000, 10%)}, 0px 8px 3px #{rgba(#000, 10%)};
+	--hover-shadow: 0 0 5px 0 #{rgba(#000, 10%)}, 0 0 10px 0 #{rgba(#000, 10%)}, 0 0 15px 0 #{rgba(#000, 10%)};
+}

@@ -1,0 +1,115 @@
+.prices {
+  background: var(--secondary-color);
+
+  &_wrapper {
+    padding: rem(100) 0;
+
+    @include media-mx(991) {
+      padding: rem(50) 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(50);
+    color: white;
+    @include adaptiv-font(45, 25);
+    line-height: 1.2;
+
+    @include media-mx(991) {
+      margin-bottom: rem(25);
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: rem(20);
+    align-items: center;
+
+    @include media-mx(991) {
+      grid-template-columns: minmax(rem(280), rem(400));
+      justify-content: center;
+    }
+  }
+
+  .price {
+    border: rem(1) solid #565656;
+
+    &.popular {
+      border-color: var(--primary-color);
+    }
+
+    &_header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: rem(20);
+      padding: rem(20);
+      border-bottom: rem(1) solid #565656;
+    }
+
+    &__status {
+      padding: rem(7) rem(20);
+      background: #E9324733;
+      color: #D2D2D2;
+      border-radius: rem(50);
+      font-size: rem(16);
+    }
+
+    &__packet {
+      color: #D2D2D2;
+      font-size: rem(16);
+    }
+
+    &__count {
+      color: white;
+      @include adaptiv-font(30, 20);
+    }
+
+    &_body {
+      padding: rem(20) rem(10) rem(40);
+    }
+
+    &__text {
+      margin-bottom: rem(20);
+      color: #D2D2D2;
+      font-size: rem(16);
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: rem(10);
+      margin-bottom: rem(20);
+
+      li {
+        position: relative;
+        padding-left: rem(44);
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: rem(24);
+          height: rem(24);
+          background: url('../images/ic_outline-check.svg') no-repeat center / cover;
+        }
+
+        color: white;
+        font-size: rem(16);
+        line-height: 1.4;
+      }
+    }
+
+    &__btn {
+      background: transparent;
+      border: rem(1) solid var(--primary-color);
+    }
+
+    .btn {
+      margin: 0 auto;
+    }
+  }
+}

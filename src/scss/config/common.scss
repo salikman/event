@@ -1,0 +1,38 @@
+// Заголовки, общие БЄМ блоки и прочее...
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: max-content;
+  padding: rem(15) rem(30);
+  background: var(--primary-color);
+  color: white;
+  border-radius: rem(4);
+  @include adaptiv-font(18, 16);
+  transition: var(--bs-transition);
+
+  @include media-mx(991) {
+    padding: rem(10) rem(20);
+  }
+
+  &:hover {
+    box-shadow: 0 2px 12px rgba(#E93247, .9);
+  }
+}
+
+.play {
+  display: flex;
+  align-items: center;
+  gap: rem(10);
+
+  img {
+    width: rem(24);
+    height: rem(24);
+    object-fit: contain;
+  }
+
+  span {
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+}

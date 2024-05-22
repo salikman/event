@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Главная'
+  })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html')
+
+      <main class="page">
+        <div data-observ></div>
+
+        @@include('html/sections/intro.html')
+        @@include('html/sections/who-is.html')
+        @@include('html/sections/about.html')
+        @@include('html/sections/task.html')
+        @@include('html/sections/course.html')
+        @@include('html/sections/video.html')
+        @@include('html/sections/guests.html')
+        @@include('html/sections/prices.html')
+        @@include('html/sections/reviews.html')
+        
+      </main>
+
+      @@include('html/footer.html')
+    </div>
+
+    @@include('html/popup-example.html')
+    @@include('html/modal.html')
+
+    @@include('html/script.html')
+  </body>
+</html>

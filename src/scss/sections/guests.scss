@@ -1,0 +1,105 @@
+.guests {
+  background: white;
+  overflow: hidden;
+
+  &_wrapper {
+    padding: rem(100) 0;
+
+    @include media-mx(991) {
+      padding: rem(50) 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(50);
+    @include adaptiv-font(45, 25);
+
+    @include media-mx(991) {
+      margin-bottom: rem(25);
+    }
+    @include media-mx(600) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-bottom: rem(30);
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      height: auto;
+
+      @include media-mx(600) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: rem(20);
+
+    @include media-mx(600) {
+      justify-content: center;
+    }
+  }
+
+  .prevArrowG, .nextArrowG {
+    width: rem(48);
+    height: rem(48);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .prevArrowG, .nextArrowG {
+    background-image: url('../images/arrow-silver.svg');
+
+    &:hover {
+      background-image: url('../images/arrow-red.svg');
+    }
+  }
+  .nextArrowG {
+    transform: rotate(180deg);
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    height: 100%;
+    padding: rem(10);
+    border: rem(1) solid #565656;
+
+    &__img {
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        aspect-ratio: 1;
+      }
+    }
+
+    &__text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: rem(10);
+    }
+
+    &__title {
+      line-height: 1.2;
+    }
+
+    &__desc {
+      font-size: rem(16);
+    }
+  }
+}

@@ -1,0 +1,688 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <style>html { opacity: 0; }</style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Главная</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20240522214249" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css?_v=20240522214249" integrity="sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240522214249">
+</head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header" data-lp>
+	<div class="__container">
+		<div class="header_wrapper">
+			<a href="#" class="header__logo logo">Артур<br>Хмелевский</a>
+
+			<nav class="header__menu">
+				<a href="#about">О курсе</a>
+				<a href="#task">О лекторе</a>
+				<a href="#course">Программа курса</a>
+			</nav>
+	
+			<a href="#feedback" data-fancybox class="btn header__feedback">
+				<span>Зарегистрироваться</span>
+				<img src="images/register.svg" alt="">
+			</a>
+			
+			<button class="header__burger icon-menu">
+  <span></span>
+</button>
+		</div>
+	</div>
+</header>
+
+
+      <main class="page">
+        <div data-observ></div>
+
+        <section class="intro">
+  <div class="__container">
+    <div class="intro_wrapper">
+      <div class="intro_text">
+        <div class="intro__subtitle">Курс</div>
+        <h1 class="intro__title">10 заповедей<br>event-менеджера</h1>
+        <div class="intro__text">
+          <span>Старт 9 мая</span>
+          <span>Длительность 4 месяца</span>
+          <span>Online</span>
+        </div>
+        <div class="intro_links">
+          <a href="#" class="btn">Подать заявку</a>
+          <a href="#" class="play">
+            <img src="images/ion_play.svg" alt="">
+            <span>Смотреть  showreeel</span>
+          </a>
+        </div>
+        <div class="intro__time">
+          <p><span>Поторопитесь!</span> Не теряйте времени</p>
+
+          <div id="counter">
+   
+            <div>
+                <h2 class="box" id="days"></h2>
+                <p>:</p>
+                <h2 class="box" id="hours"></h2>
+                <p>:</p>
+                <h2 class="box" id="minutes"></h2>
+                <p>:</p>
+                <h2 class="box" id="seconds"></h2>
+            </div>
+               
+          </div>
+        </div>
+      </div>
+      <div class="intro_img">
+        <picture><source srcset="images/img-intro.webp" type="image/webp"><img src="images/img-intro.jpg" alt=""></picture>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="wi">
+  <div class="__container">
+    <div class="wi_wrapper">
+      <div class="wi__title">Для кого курс</div>
+      <div class="wi_row">
+        <div class="wi_img">
+          <picture><source srcset="images/img-wi.webp" type="image/webp"><img src="images/img-wi.jpg" alt=""></picture>
+        </div>
+        <div class="wi_text">
+          <ul class="wi__list">
+            <li>
+              <span>01</span>
+              <p>Начинающий, мечтающий уверенно стартовать в индустрии событий</p>
+            </li>
+            <li>
+              <span>02</span>
+              <p>Профессионал, который стремится расширить свои знания и умения</p>
+            </li>
+            <li>
+              <span>03</span>
+              <p>Фрилансер, который ищет новые возможности и способы развития</p>
+            </li>
+            <li>
+              <span>04</span>
+              <p>Предприниматель, который хочет организовывать эффективные и запоминающиеся события</p>
+            </li>
+          </ul>
+          <div class="wi__text">
+            <h4>Этот курс - для тебя! </h4>
+            <p>Он предлагает понятную и практическую информацию, которая поможет тебе стать успешным event-менеджером.</p>
+            <p>Независимо от твоего опыта и знаний, мы гарантируем, что после прохождения курса ты получишь не только новые навыки, но и уверенность в своих способностях и возможностях в этой увлекательной отрасли!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section id="about" class="about">
+  <div class="__container">
+    <ul class="about_wrapper">
+      <div class="about__title">О курсе</div>
+      <ul class="about__list">
+        <li>
+          <span>Лекции</span>
+          <p>Все занятия будут проходить в Zoom по единой<br>ссылке, которую вы найдете:</p>
+          <ul>
+            <li>в Google Classroom</li>
+            <li>в Google Календаре</li>
+            <li>в Письме-Приглашении</li>
+            <li>в Discord</li>
+          </ul>
+        </li>
+        <li>
+          <span>Материалы</span>
+          <p>Презентации и записи занятий будут доступны в Google Classroom.</p>
+          <p>Домашние задания сдаются в Google Classroom, инструкции можно найти в стартовом пакете.</p>
+        </li>
+        <li>
+          <span>Комуникация</span>
+          <p>Общение с преподавателем, одноклассниками и<br>нашей командой будет производиться в Discord.</p>
+        </li>
+        <li>
+          <span>Ожидания</span>
+          <p>Мы уверены, что курс оправдает ваши ожидания!</p>
+        </li>
+      </ul>
+    </ul></div>
+  </section></main></div>
+
+        <section id="task" class="task">
+  <div class="task_wrapper">
+    <div class="task_text">
+      <div class="__container">
+        <div class="task_inner">
+          <div class="task__title">Моя задача - инсипировать,<br>а не навязывать.<br>Здесь - только креатив<br>и идеи</div>
+          <div class="task__author">
+            <p>Артур Хмелевский</p>
+            <ul>
+              <li><a href="#"><img src="images/instagram.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/telegram.svg" alt=""></a></li>
+              <li><a href="#"><img src="images/googleplus.svg" alt=""></a></li>
+            </ul>
+          </div>
+          <ul class="task__list">
+            <li>
+              <span>2, 5 млн kr</span>
+              <p>Привлек инвестиций в стартапы Luxe Linen и Skivy.cz </p>
+            </li>
+            <li>
+              <span>10 млн</span>
+              <p>Просмотров на YouTube шоу "Goosebumps Media"</p>
+            </li>
+            <li>
+              <span>200+</span>
+              <p>Организовано мероприятий</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="task_img">
+      <picture><source srcset="images/img-task.webp" type="image/webp"><img src="images/img-task.jpg" alt=""></picture>
+    </div>
+  </div>
+</section>
+        <section id="course" class="course">
+  <div class="__container">
+    <div class="course_wrapper">
+      <div class="course__title">Программа курса</div>
+      <div class="course__slider">
+        <div class="swiper swiperCourse">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-1.webp" type="image/webp"><img src="images/course-1.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">01</div>
+                  <div class="item__title">Познай мир Ивент-Менеджмента</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-2.webp" type="image/webp"><img src="images/course-2.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">02</div>
+                  <div class="item__title">Создай свой концепт</div>
+                  <div class="item__desc">Домашнее задание</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-3.webp" type="image/webp"><img src="images/course-3.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">03</div>
+                  <div class="item__title">Рассчитай бюджет</div>
+                  <div class="item__desc">Домашнее задание</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-4.webp" type="image/webp"><img src="images/course-4.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">04</div>
+                  <div class="item__title">Найди идеальное место, дату и время</div>
+                  <div class="item__desc">Домашнее задание</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-5.webp" type="image/webp"><img src="images/course-5.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">05</div>
+                  <div class="item__title">Планируй, сотрудничай, наслаждайся</div>
+                  <div class="item__desc">Домашнее задание</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-1.webp" type="image/webp"><img src="images/course-1.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">01</div>
+                  <div class="item__title">Познай мир Ивент-Менеджмента</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/course-2.webp" type="image/webp"><img src="images/course-2.png" alt=""></picture></div>
+                <div class="item__text">
+                  <div class="item__num">02</div>
+                  <div class="item__title">Создай свой концепт</div>
+                  <div class="item__desc">Домашнее задание</div>
+                </div>
+                <div class="item__date">8 Марта 2024</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="course_row">
+        <a href="#" class="btn">Зарегистрироваться</a>
+        
+        <div class="course__buttons">
+          <button class="prevArrow"></button>
+          <button class="nextArrow"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="video">
+  <a href="#" class="video__link"><img src="images/play.svg" alt=""></a>
+</section>
+        <section class="guests">
+  <div class="__container">
+    <div class="guests_wrapper">
+      <div class="guests__title">Гости лекций</div>
+      <div class="guests__slider">
+        <div class="swiper swiperGuests">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-1.webp" type="image/webp"><img src="images/guests-1.png" alt=""></picture></div>
+                <div class="item__title">Олексей Третяк</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-2.webp" type="image/webp"><img src="images/guests-2.png" alt=""></picture></div>
+                <div class="item__title">Алина Ханбабаева</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-3.webp" type="image/webp"><img src="images/guests-3.png" alt=""></picture></div>
+                <div class="item__title">Анастасия Зименкова</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-4.webp" type="image/webp"><img src="images/guests-4.png" alt=""></picture></div>
+                <div class="item__title">Даня Нестеревич</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-5.webp" type="image/webp"><img src="images/guests-5.png" alt=""></picture></div>
+                <div class="item__title">Олексей Третяк</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-4.webp" type="image/webp"><img src="images/guests-4.png" alt=""></picture></div>
+                <div class="item__title">Даня Нестеревич</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__img"><picture><source srcset="images/guests-5.webp" type="image/webp"><img src="images/guests-5.png" alt=""></picture></div>
+                <div class="item__title">Олексей Третяк</div>
+                <div class="item__desc">Head of R&D у Skylum</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="guests__buttons">
+        <button class="prevArrowG"></button>
+        <button class="nextArrowG"></button>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="prices">
+  <div class="__container">
+    <div class="prices_wrapper">
+      <div class="prices__title">Ценовые предложения: <br>За Ваше Комфортное Планирование <br>И Подбор Решений</div>
+      <div class="prices__list">
+        <div class="price">
+          <div class="price_header">
+            <div class="price__packet">Standart</div>
+            <div class="price__count">100$</div>
+          </div>
+          <div class="price_body">
+            <div class="price__text">Что получите:</div>
+            <ul class="price__list">
+              <li>Доступ к базовым видеоурокам и материалам курса.</li>
+              <li>Электронный учебник с основными принципами event-менеджмента.</li>
+              <li>Поддержка через электронную почту для решения вашего вопроса.</li>
+              <li>Обмен опытом с другими участниками курса через форум.</li>
+              <li>Сертификат об успешном завершении курса.</li>
+            </ul>
+            <a href="#feedback" data-fancybox class="btn price__btn">Зарегистрироваться</a>
+          </div>
+        </div>
+        <div class="price popular">
+          <div class="price_header">
+            <span class="price__status">Популярный</span>
+            <div class="price__packet">Plus</div>
+            <div class="price__count">300$</div>
+          </div>
+          <div class="price_body">
+            <div class="price__text">Что получите:</div>
+            <ul class="price__list">
+              <li>Доступ к базовым видеоурокам и материалам курса.</li>
+              <li>Электронный учебник с основными принципами event-менеджмента.</li>
+              <li>Поддержка через электронную почту для решения вашего вопроса.</li>
+              <li>Обмен опытом с другими участниками курса через форум.</li>
+              <li>Сертификат об успешном завершении курса.</li>
+            </ul>
+            <a href="#feedback" data-fancybox class="btn">Зарегистрироваться</a>
+          </div>
+        </div>
+        <div class="price">
+          <div class="price_header">
+            <div class="price__packet">VIP</div>
+            <div class="price__count">500$</div>
+          </div>
+          <div class="price_body">
+            <div class="price__text">Что получите:</div>
+            <ul class="price__list">
+              <li>Доступ к базовым видеоурокам и материалам курса.</li>
+              <li>Электронный учебник с основными принципами event-менеджмента.</li>
+              <li>Поддержка через электронную почту для решения вашего вопроса.</li>
+              <li>Обмен опытом с другими участниками курса через форум.</li>
+              <li>Сертификат об успешном завершении курса.</li>
+            </ul>
+            <a href="#feedback" data-fancybox class="btn price__btn">Зарегистрироваться</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+        <section class="reviews">
+  <div class="__container">
+    <div class="reviews_wrapper">
+      <div class="reviews__title">Отзывы</div>
+      <div class="reviews__slider">
+        <div class="swiper swiperReviews">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="item">
+                <div class="item__info">
+                  <img src="images/user.svg" alt="">
+                  <p>Melissa Morillo</p>
+                  <span>CO-Founder</span>
+                </div>
+                <div class="item__message">Although this is well intentioned and the goal certainly is to reduce the quantity of these bothersome thoughts, the technique is inherently flawed. </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reviews__buttons">
+        <button class="prevArrowR"></button>
+        <button class="nextArrowR"></button>
+      </div>
+    </div>
+  </div>
+</section>
+        
+      
+
+      <footer class="footer">
+  <div class="__container">
+    <div class="footer_wrapper">
+      <a href="/" class="footer__logo">Артур<br>Хмелевский</a>
+
+      <nav class="footer__menu">
+        <a href="#">О курсе</a>
+        <a href="#">О лекторе</a>
+        <a href="#">Программа курса</a>
+      </nav>
+
+      <button data-type="popup-1" class="btn">Зарегистрироваться</button>
+
+      <a href="#" id="back-to-top" class="up"><img src="images/arrow-up.svg" alt=""></a>
+    </div>
+  </div>
+</footer>
+    
+
+    <div class="popup" data-popup="popup-1" data-close-overlay>
+    <div class="popup__wrapper" data-close-overlay>
+        <div class="popup__content">
+            <button class="button-close popup__close" type="button">x</button>
+            <div class="popup__body">
+                <div class="popup_header">
+                    <h2>Оставить заявку</h2>
+                    <p>Курс “10 заповедей event-менеджера”</p>
+                    <ul>
+                        <li>
+                            <img src="images/mingcute_time-line.svg" alt="">
+                            <span>5 - 25 Марта 2024</span>
+                        </li>
+                        <li>
+                            <img src="images/carbon_location.svg" alt="">
+                            <span>Online</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="popup_form">
+                    <label>
+                        <input type="text" placeholder="Имя Фамилия">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Номер телефона">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="E-mail">
+                    </label>
+                    <label>
+                        <input type="text" placeholder="Город">
+                    </label>
+                    <button class="btn">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="feedback">
+  <div class="popup__body">
+    <button class="button-close popup__close" type="button">x</button>
+    <div class="popup_header">
+        <h2>Оставить заявку</h2>
+        <p>Курс “10 заповедей event-менеджера”</p>
+        <ul>
+            <li>
+                <img src="images/mingcute_time-line.svg" alt="">
+                <span>5 - 25 Марта 2024</span>
+            </li>
+            <li>
+                <img src="images/carbon_location.svg" alt="">
+                <span>Online</span>
+            </li>
+        </ul>
+    </div>
+    <div class="popup_form">
+        <label>
+            <input type="text" placeholder="Имя Фамилия">
+        </label>
+        <label>
+            <input type="text" placeholder="Номер телефона">
+        </label>
+        <label>
+            <input type="text" placeholder="E-mail">
+        </label>
+        <label>
+            <input type="text" placeholder="Город">
+        </label>
+        <button class="btn">Зарегистрироваться</button>
+    </div>
+  </div>
+</div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js?_v=20240522214249" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js?_v=20240522214249" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js?_v=20240522214249" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.min.js?_v=20240522214249" defer="defer"></script>
+
+<script>
+  document.getElementById('back-to-top').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  var swiperCourse = new Swiper(".swiperCourse", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrow",
+      prevEl: ".prevArrow",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiperGuests = new Swiper(".swiperGuests", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrowG",
+      prevEl: ".prevArrowG",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiperReviews = new Swiper(".swiperReviews", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrowR",
+      prevEl: ".prevArrowR",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+</script>
+<script>
+  function CountDownTimer() {
+    left_days = document.getElementById("days");
+    left_hours = document.getElementById("hours");
+    left_minutes = document.getElementById("minutes");
+    left_seconds = document.getElementById("seconds");
+
+  }
+  function showRemaining() {
+    now = new Date();
+
+    days = 10 - now.getDay();;
+    hours = 23 - now.getHours();
+    minutes = 59 - now.getMinutes();
+    seconds = 59 - now.getSeconds();
+    left_days.innerHTML = days + "<br> <span class=\"small\"> Дней </span>"
+    left_hours.innerHTML = hours + "<br> <span class=\"small\"> Часов</span>";
+    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">Минут</span>";
+    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">Секунд</span>";
+  }
+
+  timer = setInterval(showRemaining, 1000)
+  CountDownTimer();
+</script>
+  </body>
+</html>

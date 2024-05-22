@@ -1,0 +1,104 @@
+.reviews {
+  background: white;
+  overflow: hidden;
+
+  &_wrapper {
+    padding: rem(100) 0;
+
+    @include media-mx(991) {
+      padding: rem(50) 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(50);
+    @include adaptiv-font(45, 25);
+
+    @include media-mx(991) {
+      margin-bottom: rem(25);
+    }
+    @include media-mx(600) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    .swiper {
+      width: 100%;
+      height: 100%;
+      padding-bottom: rem(30);
+      overflow: visible;
+    }
+
+    .swiper-slide {
+      height: auto;
+
+      @include media-mx(600) {
+        width: 90%;
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: rem(20);
+
+    @include media-mx(600) {
+      justify-content: center;
+    }
+  }
+
+  .prevArrowR, .nextArrowR {
+    width: rem(48);
+    height: rem(48);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all .3s ease;
+  }
+
+  .prevArrowR, .nextArrowR {
+    background-image: url('../images/arrow-silver.svg');
+
+    &:hover {
+      background-image: url('../images/arrow-red.svg');
+    }
+  }
+  .nextArrowR {
+    transform: rotate(180deg);
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    padding: rem(20);
+    border: rem(1) solid #565656;
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: rem(15);
+
+      img {
+        width: rem(48);
+        height: rem(48);
+        object-fit: contain;
+      }
+
+      p {
+        line-height: 1.4;
+      }
+
+      span {
+        color: #565656;
+        font-size: rem(16);
+      }
+    }
+
+    &__message {
+      font-size: rem(16);
+      line-height: 1.4;
+    }
+  }
+}

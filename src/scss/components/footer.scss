@@ -1,0 +1,61 @@
+@import "../config/functions";
+@import "../config/mixins";
+
+.footer {
+	padding-block: rem(20);
+	background: var(--primary-color);
+
+	@include media-mx(991) {
+		flex-direction: column;
+		padding-block: rem(40);
+	}
+
+	&_wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: rem(20);
+
+		@include media-mx(991) {
+			flex-direction: column;
+			gap: rem(40);
+		}
+	}
+
+	&__logo {
+		color: white;
+		@include adaptiv-font(22, 18);
+
+		@include media-mx(991) {
+			display: none;
+		}
+	}
+
+	&__menu {
+		display: flex;
+    gap: rem(90);
+
+		@include media-mx(1240) {
+			gap: rem(50);
+		}
+		@include media-mx(991) {
+			flex-direction: column;
+			text-align: center;
+			gap: rem(20);
+		}
+
+		a {
+      color: white;
+      transition: all .3s ease;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+	}
+
+	.btn {
+		background: white;
+		color: var(--bs-font-color);
+	}
+}

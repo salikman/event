@@ -1,0 +1,95 @@
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.min.js" defer></script>
+
+<script>
+  document.getElementById('back-to-top').addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+  var swiperCourse = new Swiper(".swiperCourse", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrow",
+      prevEl: ".prevArrow",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiperGuests = new Swiper(".swiperGuests", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrowG",
+      prevEl: ".prevArrowG",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+  var swiperReviews = new Swiper(".swiperReviews", {
+    slidesPerView: "auto",
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".nextArrowR",
+      prevEl: ".prevArrowR",
+    },
+    breakpoints: {
+      601: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      },
+    },
+  });
+</script>
+<script>
+  function CountDownTimer() {
+    left_days = document.getElementById("days");
+    left_hours = document.getElementById("hours");
+    left_minutes = document.getElementById("minutes");
+    left_seconds = document.getElementById("seconds");
+
+  }
+  function showRemaining() {
+    now = new Date();
+
+    days = 10 - now.getDay();;
+    hours = 23 - now.getHours();
+    minutes = 59 - now.getMinutes();
+    seconds = 59 - now.getSeconds();
+    left_days.innerHTML = days + "<br> <span class=\"small\"> Дней </span>"
+    left_hours.innerHTML = hours + "<br> <span class=\"small\"> Часов</span>";
+    left_minutes.innerHTML = minutes + "<br> <span class=\"small\">Минут</span>";
+    left_seconds.innerHTML = seconds + "<br> <span class=\"small\">Секунд</span>";
+  }
+
+  timer = setInterval(showRemaining, 1000)
+  CountDownTimer();
+</script>

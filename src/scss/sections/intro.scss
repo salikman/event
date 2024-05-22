@@ -1,0 +1,133 @@
+.intro {
+  background: var(--secondary-color);
+
+  &_wrapper {
+    display: flex;
+    align-items: center;
+    gap: rem(24);
+
+    @include media-mx(991) {
+      flex-direction: column;
+      padding: rem(50) 0;
+    }
+  }
+
+  &_text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    margin-bottom: rem(10);
+    color: var(--primary-color);
+    @include adaptiv-font(30, 20);
+
+    @include media-mx(991) {
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin-bottom: rem(40);
+    color: white;
+    @include adaptiv-font(70, 40);
+    line-height: 1;
+
+    @include media-mx(991) {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+    margin-bottom: rem(40);
+    color: white;
+
+    @include adaptiv-font(18, 16);
+
+    @include media-mx(991) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &_links {
+    display: flex;
+    align-items: center;
+    gap: rem(30);
+
+    @include media-mx(991) {
+      flex-direction: column-reverse;
+    }
+
+    .play {
+      color: white;
+    }
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+    margin-top: rem(80);
+
+    @include media-mx(991) {
+      align-items: center;
+      text-align: center;
+    }
+
+    p {
+      color: white;
+      @include adaptiv-font(22, 16);
+
+      span {
+        color: var(--primary-color);
+      }
+    }
+
+    #counter {
+      div {
+        display: flex;
+        align-items: center;
+        gap: rem(30);
+
+        @include media-mx(991) {
+          gap: rem(15);
+          justify-content: center;
+        }
+
+        h2 {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: rem(5);
+          color: white;
+          @include adaptiv-font(25, 20);
+
+          span {
+            @include adaptiv-font(16, 14);
+          }
+        }
+      }
+    }
+  }
+
+  &_img {
+    width: rem(500);
+    height: 100%;
+
+    @include media-mx(991) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+}

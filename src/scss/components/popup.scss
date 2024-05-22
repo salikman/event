@@ -1,0 +1,164 @@
+@import "../config/mixins";
+
+.popup {
+	$white-100: #fff;
+	pointer-events: none;
+	opacity: 0;
+	position: fixed;
+	inset: 0;
+	z-index: 2000;
+	block-size: 100%;
+	inline-size: 100%;
+	font-family: "Unbounded", sans-serif;
+
+	/** Установить свои значения */
+	padding: rem(30) rem(10);
+	overflow-block: auto;
+	background-color: rgba(#000, 50%);
+	transition: opacity 0.4s ease-in-out;
+
+	&.is-open {
+		pointer-events: auto;
+		opacity: 1;
+
+		.popup__content {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	// .popup__wrapper
+	&__wrapper {
+		display: flex;
+		min-block-size: 100%;
+		align-items: center;
+	}
+
+	// .popup__content
+	&__content {
+		// opacity: 0;
+		// position: relative;
+		// margin: 0 auto;
+		inline-size: 100%;
+		max-inline-size: rem(550);
+
+		/** Установить свои значения */
+		// padding: rem(30) rem(50);
+		// background-color: var(--secondary-color);
+		// border: rem(1) solid var(--primary-color);
+		// transform: translateY(rem(-200));
+		// transition:
+		// 	transform 0.2s ease-in-out,
+		// 	opacity 0.2s ease-in-out;
+	}
+
+	// .popup__close
+	&__close {
+		display: flex;
+		position: absolute;
+
+		/** Установить свои значения */
+		inset-block-start: rem(3);
+		inset-inline-end: rem(3);
+		border-radius: rem(8);
+		block-size: rem(40);
+		inline-size: rem(40);
+		align-items: center;
+		justify-content: center;
+		color: white;
+		background: transparent;
+		font-size: rem(20);
+		pointer-events: none;
+	}
+
+	&__body {
+		display: flex;
+		flex-direction: column;
+		gap: rem(30);
+	}
+
+	&_header {
+		display: flex;
+		flex-direction: column;
+		gap: rem(15);
+
+		h2 {
+			color: white;
+			@include adaptiv-font(32, 22);
+		}
+
+		p {
+			color: var(--primary-color);
+			@include adaptiv-font(18, 16);
+			font-weight: 300;
+		}
+
+		ul {
+			display: flex;
+			flex-wrap: wrap;
+			gap: rem(20);
+
+			li {
+				display: flex;
+				align-items: center;
+				gap: rem(10);
+
+				img {
+					width: rem(24);
+					height: rem(24);
+					object-fit: contain;
+				}
+
+				span {
+					color: white;
+					@include adaptiv-font(16, 14);
+					font-weight: 300;
+				}
+			}
+		}
+	}
+
+	&_form {
+		display: flex;
+		flex-direction: column;
+		gap: rem(10);
+		width: 100%;
+
+		label {
+			display: block;
+			width: 100%;
+
+			input {
+				width: 100%;
+				padding: rem(15) rem(30);
+				background: transparent;
+				color: white;
+				border: rem(1) solid #565656;
+				border-radius: rem(4);
+				font-size: rem(16);
+				font-weight: 300;
+			}
+		}
+
+		button {
+			width: 100%;
+			font-weight: 300;
+		}
+	}
+}
+
+.fancybox-content {
+	inline-size: 100%;
+	max-inline-size: rem(550);
+	padding: rem(30) rem(50);
+	background-color: var(--secondary-color);
+	border: rem(1) solid var(--primary-color);
+	
+	@include media-mx(991) {
+		padding: rem(30) rem(25);
+	}
+}
+
+.fancybox-button svg {
+	display: none;
+}
