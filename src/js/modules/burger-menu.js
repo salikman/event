@@ -3,8 +3,8 @@ import { Popup } from '../helpers/popup';
 export class BurgerMenu extends Popup {
 	constructor() {
 		super();
-
 		this.burgerButton = document.querySelector('.icon-menu');
+		this.navLinks = document.querySelectorAll('.header__menu a');
 	}
 
 	/**
@@ -17,6 +17,15 @@ export class BurgerMenu extends Popup {
 					this.html.classList.toggle('menu-open');
 					this.toggleBodyLock(this.isMenuOpen);
 				}
+			});
+		}
+
+		// Add event listeners to the navigation links to close the menu
+		if (this.navLinks.length > 0) {
+			this.navLinks.forEach(link => {
+				link.addEventListener('click', () => {
+					this.menuClose();
+				});
 			});
 		}
 	}

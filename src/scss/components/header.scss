@@ -4,7 +4,7 @@
 .header {
 	z-index: 50;
 	inline-size: 100%;
-	transition: background-color var(--bs-transition);
+	transition: all .3s ease;
   background: var(--secondary-color);
   border-bottom: rem(1) solid #565656;
 
